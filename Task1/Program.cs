@@ -1,7 +1,4 @@
-﻿using System;
-// Console.WriteLine("Hello, World!");
-
-internal class Program
+﻿internal class Program
 {
     static void Main()
     {
