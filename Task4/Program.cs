@@ -72,35 +72,35 @@
 //     }
 // }
 
-// // цикл, который будет осуществлять перебор элементов массива:
-// int[,] matrix = CreateMatrix(3, 4);
-// ShowMatrix(matrix);
-// foreach (int e in matrix)
-// {
-//     if (IsIntresting(e) == true)
-//         Write($"{e} ");
-// }
+// цикл, который будет осуществлять перебор элементов массива:
+int[,] matrix = CreateMatrix(3, 4);
+ShowMatrix(matrix);
+foreach (int e in matrix)
+{
+    if (IsIntresting(e) == true)
+        Write($"{e} ");
+}
 
-// // Реализация для функции IsInteresting.
-// // Возвращать она будет значение типа bool, на вход принимать один параметр – целое число, которое и будет проверяться:
-// bool IsIntresting(int value)
-// {
-//     int sumOfDigits = GetSumOfDigits(value);
-//     if (sumOfDigits % 2 == 0) // Вычисление суммы цифр числа
-//     {
-//         return true;
-//     }
-//     return false;
-// }
+// Реализация для функции IsInteresting.
+// Возвращать она будет значение типа bool, на вход принимать один параметр – целое число, которое и будет проверяться:
+bool IsIntresting(int value)
+{
+    int sumOfDigits = GetSumOfDigits(value);
+    if (sumOfDigits % 2 == 0) // Вычисление суммы цифр числа
+    {
+        return true;
+    }
+    return false;
+}
 
-// // написать функцию GetSumOfDigits:
-// int GetSumOfDigits(int value)
-// {
-//     int sum = 0;
-//     while (value > 0)
-//     {
-//         sum += value % 10; // Проверка суммы чисел на чётность
-//         value = value / 10;
-//     }
-//     return sum;
-// }
+// написать функцию GetSumOfDigits:
+int GetSumOfDigits(int value)
+{
+    int sum = 0;
+    while (value > 0)
+    {
+        sum += value % 10; // Проверка суммы чисел на чётность
+        value = value / 10;
+    }
+    return sum;
+}
