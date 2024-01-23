@@ -6,3 +6,18 @@
 // Для работы со строками в C# используется специальный символ - String, кратко str.
 // ВАЖНО: У Строки нет возможности изменять элементы существующей строки, а также невозможности увеличивать и укорачивать строку.
 
+string GetLetterFromString(string s)
+{
+    string letters = "";
+    foreach (char e in s)
+    {
+        if (char.IsAsciiLetter(e) == true)
+        {
+            letters = letters + e;
+        }
+    }
+    return letters;
+}
+string str = ReadLine()!;
+string result = GetLetterFromString(str);
+WriteLine(result);
